@@ -9,6 +9,7 @@
 ---
 
 ## Models
+
 - turbo
 
 > Only the turbo model is included in this worker to decrease its size.
