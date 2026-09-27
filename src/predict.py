@@ -91,6 +91,7 @@ class Predictor:
                         model_name,
                         device="cuda" if rp_cuda.is_available() else "cpu",
                         compute_type="float16" if rp_cuda.is_available() else "int8",
+                        local_files_only=True,
                     )
                     self.models[model_name] = loaded_model
                     model = loaded_model
